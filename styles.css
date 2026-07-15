@@ -1,0 +1,301 @@
+/* ===== Clave de Elasmobranquios - estilos mobile-first ===== */
+:root {
+  --azul: #0b3d5c;
+  --azul-med: #15678a;
+  --azul-claro: #e7f1f6;
+  --verde: #2e7d32;
+  --naranja: #ef6c00;
+  --rojo: #c62828;
+  --gris: #607d8b;
+  --fondo: #f4f7f9;
+  --texto: #1a2b34;
+  --borde: #d3dde3;
+  --sombra: 0 2px 8px rgba(0,0,0,.08);
+  --radio: 14px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+               "Helvetica Neue", Arial, sans-serif;
+  background: var(--fondo);
+  color: var(--texto);
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Topbar ===== */
+.topbar {
+  position: sticky; top: 0; z-index: 10;
+  background: var(--azul);
+  color: #fff;
+  display: flex; align-items: center; gap: 8px;
+  padding: 12px 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.15);
+}
+.topbar h1 {
+  flex: 1;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-align: center;
+}
+.btn-back, .btn-restart {
+  background: rgba(255,255,255,.15);
+  border: none;
+  color: #fff;
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+.btn-back:active, .btn-restart:active { background: rgba(255,255,255,.3); }
+.hidden { display: none !important; }
+
+/* ===== Progreso ===== */
+.progress-bar {
+  background: var(--azul-claro);
+  padding: 8px 14px;
+  display: flex; align-items: center; gap: 10px;
+  position: relative;
+}
+.progress-fill-bg {
+  flex: 1; height: 8px; background: #cdd9e0; border-radius: 4px; overflow: hidden;
+}
+.progress-fill {
+  height: 100%; background: var(--verde); width: 0;
+  transition: width .3s ease;
+}
+.progress-text { font-size: .78rem; color: var(--gris); white-space: nowrap; }
+
+/* ===== Main ===== */
+main {
+  flex: 1;
+  padding: 18px 14px 30px;
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ===== Pantalla de inicio ===== */
+.start-screen {
+  text-align: center;
+  padding: 20px 10px;
+}
+.start-screen .emoji { font-size: 4rem; margin-bottom: 12px; }
+.start-screen h2 {
+  font-size: 1.4rem; color: var(--azul); margin-bottom: 10px;
+}
+.start-screen p { color: var(--gris); margin-bottom: 24px; font-size: .95rem; }
+
+.btn-primary {
+  background: var(--azul-med);
+  color: #fff;
+  border: none;
+  padding: 16px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: var(--radio);
+  cursor: pointer;
+  box-shadow: var(--sombra);
+  width: 100%;
+  max-width: 320px;
+}
+.btn-primary:active { background: var(--azul); transform: scale(.98); }
+
+/* ===== Pantalla de pregunta ===== */
+.question-screen { animation: fadeIn .25s ease; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+.q-step {
+  display: inline-block;
+  background: var(--azul-claro);
+  color: var(--azul);
+  font-size: .72rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+}
+.q-pregunta {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--texto);
+  margin-bottom: 14px;
+  line-height: 1.35;
+}
+.q-ayuda {
+  background: #fff;
+  border-left: 4px solid var(--azul-med);
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: .9rem;
+  color: #455a64;
+  margin-bottom: 18px;
+  white-space: pre-line;
+  box-shadow: var(--sombra);
+}
+
+.opciones {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.opcion {
+  background: #fff;
+  border: 2px solid var(--borde);
+  border-radius: var(--radio);
+  padding: 18px 16px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--texto);
+  cursor: pointer;
+  text-align: left;
+  box-shadow: var(--sombra);
+  transition: border-color .15s, transform .08s;
+  min-height: 64px;
+  display: flex; align-items: center;
+}
+.opcion:active {
+  border-color: var(--azul-med);
+  background: var(--azul-claro);
+  transform: scale(.99);
+}
+.opcion.selected {
+  border-color: var(--verde);
+  background: #e8f5e9;
+}
+
+/* ===== Ficha de especie ===== */
+.ficha { animation: fadeIn .25s ease; }
+.ficha-header {
+  background: linear-gradient(135deg, var(--azul), var(--azul-med));
+  color: #fff;
+  padding: 22px 18px;
+  border-radius: var(--radio);
+  margin-bottom: 16px;
+}
+.ficha-header .nombre-cientifico {
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+.ficha-header .nombre-comun { font-size: 1rem; opacity: .95; }
+.ficha-header .nombre-comun-en { font-size: .85rem; opacity: .8; font-style: italic; }
+.ficha-header .familia-tag {
+  display: inline-block;
+  background: rgba(255,255,255,.2);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: .78rem;
+  margin-top: 10px;
+}
+
+.alerta-protegida {
+  background: #fff3e0;
+  border: 2px solid var(--naranja);
+  border-radius: var(--radio);
+  padding: 14px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  color: #bf360c;
+  display: flex; gap: 10px; align-items: flex-start;
+}
+.alerta-protegida .icon { font-size: 1.6rem; }
+
+.seccion {
+  background: #fff;
+  border-radius: var(--radio);
+  padding: 16px;
+  margin-bottom: 14px;
+  box-shadow: var(--sombra);
+}
+.seccion h3 {
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: var(--azul-med);
+  margin-bottom: 10px;
+  display: flex; align-items: center; gap: 6px;
+}
+.seccion .contenido { font-size: .95rem; color: #37474f; }
+.seccion .contenido p { margin-bottom: 8px; }
+.seccion .contenido p:last-child { margin-bottom: 0; }
+.seccion .key { font-weight: 600; color: var(--texto); }
+
+/* Badges de conservación */
+.badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: .82rem;
+  font-weight: 600;
+  color: #fff;
+}
+.badge.IUCN-CR { background: #d81b60; }
+.badge.IUCN-EN { background: #c62828; }
+.badge.IUCN-VU { background: #ef6c00; }
+.badge.IUCN-NT { background: #f9a825; color: #3e2723; }
+.badge.IUCN-LC { background: #2e7d32; }
+.badge.IUCN-DD { background: #607d8b; }
+.badge.CITES { background: #4527a0; }
+.badge.LR   { background: #6a1b9a; }
+.badge.neutral { background: var(--gris); }
+
+/* ===== Grupo candidato ===== */
+.grupo { animation: fadeIn .25s ease; }
+.grupo h2 { font-size: 1.2rem; color: var(--azul); margin-bottom: 6px; }
+.grupo .intro { color: var(--gris); font-size: .9rem; margin-bottom: 16px; }
+.grupo-lista { display: flex; flex-direction: column; gap: 10px; }
+.grupo-item {
+  background: #fff;
+  border: 2px solid var(--borde);
+  border-radius: var(--radio);
+  padding: 14px;
+  cursor: pointer;
+  box-shadow: var(--sombra);
+}
+.grupo-item:active { border-color: var(--azul-med); }
+.grupo-item .gn { font-style: italic; font-weight: 600; font-size: 1.05rem; }
+.grupo-item .gc { color: var(--gris); font-size: .9rem; }
+.grupo-item .meta { font-size: .82rem; color: var(--azul-med); margin-top: 4px; }
+
+/* ===== Footer ===== */
+.footer {
+  text-align: center;
+  padding: 12px;
+  font-size: .78rem;
+  color: var(--gris);
+  border-top: 1px solid var(--borde);
+  background: #fff;
+}
+
+/* ===== Botón repetir al final ===== */
+.btn-secondary {
+  background: var(--azul-claro);
+  color: var(--azul);
+  border: 2px solid var(--azul-med);
+  border-radius: var(--radio);
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+.btn-secondary:active { background: #d4e6ee; }
+
+@media (min-width: 700px) {
+  .opcion:hover { border-color: var(--azul-med); }
+}

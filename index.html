@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="theme-color" content="#0b3d5c">
+  <meta name="description" content="Clave de identificación de tiburones, rayas y quimeras de Colombia">
+  <title>Clave de Elasmobranquios · Colombia</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦈</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <button id="btn-back" class="btn-back hidden" aria-label="Atrás">←</button>
+    <h1 id="title">🦈 Clave de Elasmobranquios</h1>
+    <button id="btn-restart" class="btn-restart hidden" aria-label="Reiniciar">↻</button>
+  </header>
+
+  <div class="progress-bar hidden" id="progress">
+    <div class="progress-fill" id="progress-fill"></div>
+    <span class="progress-text" id="progress-text"></span>
+  </div>
+
+  <main id="main"></main>
+
+  <footer class="footer">
+    <span id="status">Cargando…</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

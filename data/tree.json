@@ -1,0 +1,1413 @@
+{
+  "root": "n044",
+  "nodes": [
+    {
+      "id": "n001",
+      "pregunta": "¿Cuántas hendiduras branquiales (aberturas de agallas) tiene a cada lado de la cabeza?",
+      "ayuda": "Cuente las aberturas detrás de la cabeza. La mayoría de tiburones tiene 5. Los Hexanchiformes tienen 6 o 7, muy visibles.",
+      "opciones": [
+        {
+          "texto": "6 o 7 hendiduras",
+          "siguiente": "n002"
+        },
+        {
+          "texto": "5 hendiduras",
+          "siguiente": "n005"
+        }
+      ]
+    },
+    {
+      "id": "n002",
+      "pregunta": "¿Tiene SEIS o SIETE hendiduras branquiales?",
+      "ayuda": "Hexanchus: 6 hendiduras. Heptranchias y Notorynchus: 7 hendiduras.",
+      "opciones": [
+        {
+          "texto": "Seis hendiduras",
+          "siguiente": "n003"
+        },
+        {
+          "texto": "Siete hendiduras",
+          "siguiente": "n004"
+        }
+      ]
+    },
+    {
+      "id": "n003",
+      "pregunta": "¿Es un tiburón MUY grande (hasta 6 m)?",
+      "ayuda": "Hexanchus griseus: hasta 6 m, la cañabota gigante.\nHexanchus nakamurai: hasta 1.8 m, cañabota ojigrande.",
+      "opciones": [
+        {
+          "texto": "Sí, muy grande (~6 m)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "2",
+            "titulo": "Hexanchus griseus"
+          }
+        },
+        {
+          "texto": "No, menor (~1.8 m)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "3",
+            "titulo": "Hexanchus nakamurai"
+          }
+        }
+      ]
+    },
+    {
+      "id": "n004",
+      "pregunta": "¿Es un tiburón grande (alrededor de 3 m) con cabeza ancha?",
+      "ayuda": "Heptranchias perlo: ~1.4 m, hocico puntiagudo.\nNotorynchus cepedianus: ~3 m, cabeza ancha.",
+      "opciones": [
+        {
+          "texto": "Sí, ~3 m y cabeza ancha",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "4",
+            "titulo": "Notorynchus cepedianus"
+          }
+        },
+        {
+          "texto": "No, ~1.4 m y puntiagudo",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "1",
+            "titulo": "Heptranchias perlo"
+          }
+        }
+      ]
+    },
+    {
+      "id": "n005",
+      "pregunta": "¿Tiene aleta anal (aleta pequeña en el vientre, entre las aletas pélvicas y la cola)?",
+      "ayuda": "Mire la parte inferior, entre las pélvicas y la cola. Algunos tiburones carecen de aleta anal.",
+      "opciones": [
+        {
+          "texto": "Sí, tiene aleta anal",
+          "siguiente": "n011"
+        },
+        {
+          "texto": "No, sin aleta anal",
+          "siguiente": "n006"
+        }
+      ]
+    },
+    {
+      "id": "n006",
+      "pregunta": "¿El cuerpo es MUY APLANADO (como una raya) con aletas pectorales muy grandes y separadas de la cabeza?",
+      "ayuda": "Los tiburones ángel (Squatinidae) tienen el cuerpo aplanado y parecen rayas, pero son tiburones. Los Squaliformes tienen cuerpo típico de tiburón.",
+      "opciones": [
+        {
+          "texto": "Sí, cuerpo aplanado tipo raya",
+          "siguiente": "n007"
+        },
+        {
+          "texto": "No, cuerpo de tiburón normal",
+          "siguiente": "n008"
+        }
+      ]
+    },
+    {
+      "id": "n007",
+      "pregunta": "¿Qué especie de tiburón ángel es? (Compare por región y detalles)",
+      "ayuda": "Ambas son tiburones ángel (cuerpo aplanado).",
+      "opciones": [
+        {
+          "texto": "Squatina californica",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "14",
+            "titulo": "Squatina californica"
+          }
+        },
+        {
+          "texto": "Squatina dumeril",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "15",
+            "titulo": "Squatina dumeril"
+          }
+        }
+      ]
+    },
+    {
+      "id": "n008",
+      "pregunta": "¿Es un tiburón ENANO (menos de 50 cm) con ambas dorsales provistas de espina?",
+      "ayuda": "Los Etmopteridae (tiburones linterna) son enanos (<50 cm), oscuros, a veces bioluminiscentes. El resto (Centrophorus, Squalus, Centroscyllium) son más grandes.",
+      "opciones": [
+        {
+          "texto": "Sí, enano con espinas dorsales",
+          "siguiente": "n009"
+        },
+        {
+          "texto": "No, más grande o sin esa combinación",
+          "siguiente": "n010"
+        }
+      ]
+    },
+    {
+      "id": "n009",
+      "pregunta": "¿Qué tiburón linterna (Etmopteridae) es? Compare por coloración y talla.",
+      "ayuda": "Tiburones enanos oscuros del Caribe/Pacífico profundo. Use la ficha comparativa.",
+      "opciones": [
+        {
+          "texto": "Centroscyllium nigrum (50.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "7",
+            "titulo": "Centroscyllium nigrum"
+          }
+        },
+        {
+          "texto": "Etmopterus carteri (21.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "8",
+            "titulo": "Etmopterus carteri"
+          }
+        },
+        {
+          "texto": "Etmopterus gracilispinis (35.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "9",
+            "titulo": "Etmopterus gracilispinis"
+          }
+        },
+        {
+          "texto": "Etmopterus perryi (21.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "10",
+            "titulo": "Etmopterus perryi"
+          }
+        },
+        {
+          "texto": "Etmopterus robinsi (33.8 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "11",
+            "titulo": "Etmopterus robinsi"
+          }
+        },
+        {
+          "texto": "Etmopterus schultzi (30.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "12",
+            "titulo": "Etmopterus schultzi"
+          }
+        },
+        {
+          "texto": "Etmopterus virens (26.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "13",
+            "titulo": "Etmopterus virens"
+          }
+        }
+      ]
+    },
+    {
+      "id": "n010",
+      "pregunta": "¿Cuál de estos tiburones esqualiformes es? (3 especies)",
+      "ayuda": "Centrophorus granulosus (160 cm), Squalus cubensis (110 cm), Centroscyllium nigrum (50 cm, Pacífico).",
+      "opciones": [
+        {
+          "texto": "Centrophorus granulosus",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "6",
+            "titulo": "Centrophorus granulosus"
+          }
+        },
+        {
+          "texto": "Squalus cubensis",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "5",
+            "titulo": "Squalus cubensis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "n011",
+      "pregunta": "¿Tiene una membrana nictitante (un párpado interno) en el ojo, o barbillones (carnosidades) colgando junto a la boca?",
+      "ayuda": "La membrana nictitante es un párpado vertical en la esquina del ojo. Los barbillones son filamentos carnosos cerca de las fosas nasales.",
+      "opciones": [
+        {
+          "texto": "Sí, tiene membrana nictitante",
+          "siguiente": "n012"
+        },
+        {
+          "texto": "Tiene barbillones (sin nictitante)",
+          "siguiente": "n020"
+        },
+        {
+          "texto": "No, ni nictitante ni barbillones",
+          "siguiente": "n021"
+        }
+      ]
+    },
+    {
+      "id": "n012",
+      "pregunta": "¿Es un tiburón pequeño (menos de 60 cm), delgado, a menudo con patrón de manchas?",
+      "ayuda": "Los Scyliorhinidae (tiburones gato) son pequeños (<60 cm) y delgados. Los Carcharhinidae (réquiem) son típicamente más grandes y robustos.",
+      "opciones": [
+        {
+          "texto": "Sí, pequeño y manchado",
+          "siguiente": "n013"
+        },
+        {
+          "texto": "No, tiburón mediano o grande",
+          "siguiente": "n014"
+        }
+      ]
+    },
+    {
+      "id": "n013",
+      "pregunta": "¿Qué tiburón gato (Scyliorhinidae) es? Compare por patrón, hocico y talla.",
+      "ayuda": "Tiburones pequeños del Caribe/Pacífico. Ficha comparativa.",
+      "opciones": [
+        {
+          "texto": "Apristurus parvipinnis (52.1 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "26",
+            "titulo": "Apristurus parvipinnis"
+          }
+        },
+        {
+          "texto": "Apristurus riveri (46.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "27",
+            "titulo": "Apristurus riveri"
+          }
+        },
+        {
+          "texto": "Cephalurus cephalus (32.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "28",
+            "titulo": "Cephalurus cephalus"
+          }
+        },
+        {
+          "texto": "Galeus cadenati (34.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "29",
+            "titulo": "Galeus cadenati"
+          }
+        },
+        {
+          "texto": "Schroederichthys maculatus (34.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "30",
+            "titulo": "Schroederichthys maculatus"
+          }
+        },
+        {
+          "texto": "Scyliorhinus boa (54.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "64",
+            "titulo": "Scyliorhinus boa"
+          }
+        },
+        {
+          "texto": "Scyliorhinus haeckelii (50.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "31",
+            "titulo": "Scyliorhinus haeckelii"
+          }
+        },
+        {
+          "texto": "Scyliorhinus hesperius (47.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "32",
+            "titulo": "Scyliorhinus hesperius"
+          }
+        }
+      ]
+    },
+    {
+      "id": "n014",
+      "pregunta": "¿El tiburón tiene BANDAS VERTICALES oscuras en el cuerpo (especialmente visible en juveniles)?",
+      "ayuda": "Galeocerdo cuvier (tiburón tigre): bandas verticales, hasta 7.5 m.",
+      "opciones": [
+        {
+          "texto": "Sí, bandas verticales",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "50",
+            "titulo": "Galeocerdo cuvier"
+          }
+        },
+        {
+          "texto": "No, sin bandas verticales",
+          "siguiente": "n015"
+        }
+      ]
+    },
+    {
+      "id": "n015",
+      "pregunta": "¿El cuerpo es de color AZUL OSCURO intenso, esbelto, con aletas pectorales muy largas?",
+      "ayuda": "Prionace glauca (tiburón azul): azul intenso inconfundible, hasta 4.8 m.",
+      "opciones": [
+        {
+          "texto": "Sí, azul oscuro intenso",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "53",
+            "titulo": "Prionace glauca"
+          }
+        },
+        {
+          "texto": "No, gris/marrón típico",
+          "siguiente": "n016"
+        }
+      ]
+    },
+    {
+      "id": "n016",
+      "pregunta": "¿Las puntas de las aletas (dorsal, pectorales) tienen un color claramente distinto al cuerpo?",
+      "ayuda": "Mire los extremos de la primera dorsal y las pectorales.",
+      "opciones": [
+        {
+          "texto": "Puntas BLANCAS marcadas",
+          "siguiente": "n017"
+        },
+        {
+          "texto": "Puntas NEGRAS marcadas",
+          "siguiente": "n018"
+        },
+        {
+          "texto": "Puntas del mismo color",
+          "siguiente": "n019"
+        }
+      ]
+    },
+    {
+      "id": "n017",
+      "pregunta": "¿Las pectorales son MUY largas (más largas que la cabeza) con forma de pala y puntas blancas redondeadas?",
+      "ayuda": "Carcharhinus longimanus (oceánico): pectorales en pala, peligroso en alta mar. C. albimarginatus: puntas blancas pero pectorales normales, solo Pacífico.",
+      "opciones": [
+        {
+          "texto": "Sí, pectorales en pala, muy largas",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "47",
+            "titulo": "Carcharhinus longimanus"
+          }
+        },
+        {
+          "texto": "No, pectorales normales",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "41",
+            "titulo": "Carcharhinus albimarginatus"
+          }
+        }
+      ]
+    },
+    {
+      "id": "n018",
+      "pregunta": "¿Tiene una mancha negra en la PUNTA DEL HOCICO?",
+      "ayuda": "C. acronotus: mancha negra en el hocico (blacknose), ~2.2 m. C. limbatus: puntas negras en varias aletas pero hocico limpio.",
+      "opciones": [
+        {
+          "texto": "Sí, mancha negra en el hocico",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "40",
+            "titulo": "Carcharhinus acronotus"
+          }
+        },
+        {
+          "texto": "No, hocico sin mancha",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "46",
+            "titulo": "Carcharhinus limbatus"
+          }
+        }
+      ]
+    },
+    {
+      "id": "n019",
+      "pregunta": "¿Cuál de estos carcharhínidos es? Compare por hocico, talla y región.",
+      "ayuda": "Carcharhínidos sin puntas de aleta marcadas: use la ficha comparativa (hocico, talla, distribución).",
+      "opciones": [
+        {
+          "texto": "Carcharhinus altimus (3.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "42",
+            "titulo": "Carcharhinus altimus"
+          }
+        },
+        {
+          "texto": "Carcharhinus falciformis (3.5 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "43",
+            "titulo": "Carcharhinus falciformis"
+          }
+        },
+        {
+          "texto": "Carcharhinus galapagensis (3.7 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "44",
+            "titulo": "Carcharhinus galapagensis"
+          }
+        },
+        {
+          "texto": "Carcharhinus leucas (3.5 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "45",
+            "titulo": "Carcharhinus leucas"
+          }
+        },
+        {
+          "texto": "Carcharhinus perezi (3.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "48",
+            "titulo": "Carcharhinus perezi"
+          }
+        },
+        {
+          "texto": "Carcharhinus porosus (1.5 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "49",
+            "titulo": "Carcharhinus porosus"
+          }
+        },
+        {
+          "texto": "Nasolamia velox (1.5 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "51",
+            "titulo": "Nasolamia velox"
+          }
+        },
+        {
+          "texto": "Negaprion brevirostris (3.4 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "52",
+            "titulo": "Negaprion brevirostris"
+          }
+        },
+        {
+          "texto": "Rhizoprionodon lalandei (80.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "54",
+            "titulo": "Rhizoprionodon lalandei"
+          }
+        },
+        {
+          "texto": "Rhizoprionodon longurio (1.5 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "55",
+            "titulo": "Rhizoprionodon longurio"
+          }
+        },
+        {
+          "texto": "Rhizoprionodon porosus (1.1 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "56",
+            "titulo": "Rhizoprionodon porosus"
+          }
+        },
+        {
+          "texto": "Triaenodon obesus (210.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "57",
+            "titulo": "Triaenodon obesus"
+          }
+        }
+      ]
+    },
+    {
+      "id": "n020",
+      "pregunta": "¿Es el tiburón ballena (enorme, hasta 15 m, con puntos blancos)?",
+      "ayuda": "Rhincodon typus: el pez más grande del mundo, hasta 15 m, con patrón de puntos. Ginglymostoma cirratum: tiburón nodriza, hasta 4.3 m.",
+      "opciones": [
+        {
+          "texto": "Sí, tiburón ballena gigante",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "20",
+            "titulo": "Rhincodon typus"
+          }
+        },
+        {
+          "texto": "No, tiburón nodriza (~4 m)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "19",
+            "titulo": "Ginglymostoma cirratum"
+          }
+        }
+      ]
+    },
+    {
+      "id": "n021",
+      "pregunta": "¿Tiene la cola (lóbulo superior de la aleta caudal) EXTREMADAMENTE larga, casi tan larga como el cuerpo?",
+      "ayuda": "Los Alopiidae (tiburones zorro) tienen una cola desproporcionada. Los Heterodontidae (tiburones toro/bullhead) tienen crestas óseas sobre los ojos y espinas dorsales.",
+      "opciones": [
+        {
+          "texto": "Sí, cola extremadamente larga",
+          "siguiente": "n022"
+        },
+        {
+          "texto": "Tiene crestas óseas sobre los ojos y espinas dorsales",
+          "siguiente": "n023"
+        },
+        {
+          "texto": "No, cola y cabeza normales",
+          "siguiente": "n024"
+        }
+      ]
+    },
+    {
+      "id": "n022",
+      "pregunta": "¿Qué tiburón zorro (Alopiidae) es?",
+      "ayuda": "Cola extremadamente larga. Compare talla y color.",
+      "opciones": [
+        {
+          "texto": "Alopias pelagicus (330.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "23",
+            "titulo": "Alopias pelagicus"
+          }
+        },
+        {
+          "texto": "Alopias superciliosus (459.99999999999994 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "24",
+            "titulo": "Alopias superciliosus"
+          }
+        }
+      ]
+    },
+    {
+      "id": "n023",
+      "pregunta": "¿Qué tiburón toro (Heterodontidae) es? Compare por región.",
+      "ayuda": "Crestas sobre los ojos, espinas dorsales.",
+      "opciones": [
+        {
+          "texto": "Heterodontus francisci",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "16",
+            "titulo": "Heterodontus francisci"
+          }
+        },
+        {
+          "texto": "Heterodontus mexicanus",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "17",
+            "titulo": "Heterodontus mexicanus"
+          }
+        },
+        {
+          "texto": "Heterodontus quoyi",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "18",
+            "titulo": "Heterodontus quoyi"
+          }
+        }
+      ]
+    },
+    {
+      "id": "n024",
+      "pregunta": "¿Cuál de estos tiburones lamniformes es? (3 especies)",
+      "ayuda": "Isurus oxyrinchus (marrajo, 4 m, cuerpo torpedos), Mitsukurina owstoni (duende, hocico larguísimo), Odontaspis ferox (4.1 m, dientes sobresalientes).",
+      "opciones": [
+        {
+          "texto": "Isurus oxyrinchus",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "25",
+            "titulo": "Isurus oxyrinchus"
+          }
+        },
+        {
+          "texto": "Mitsukurina owstoni",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "21",
+            "titulo": "Mitsukurina owstoni"
+          }
+        },
+        {
+          "texto": "Odontaspis ferox",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "22",
+            "titulo": "Odontaspis ferox"
+          }
+        },
+        {
+          "texto": "Alopias pelagicus",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "23",
+            "titulo": "Alopias pelagicus"
+          }
+        },
+        {
+          "texto": "Alopias superciliosus",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "24",
+            "titulo": "Alopias superciliosus"
+          }
+        }
+      ]
+    },
+    {
+      "id": "n025",
+      "pregunta": "¿El hocico es una SIERRA larga y aplanada con dientes a los lados?",
+      "ayuda": "Los peces sierra (Pristidae) tienen un hocico en sierra inconfundible. ¡Ambas especies están EN PELIGRO CRÍTICO y están PROTEGIDAS!",
+      "opciones": [
+        {
+          "texto": "Sí, hocico en sierra",
+          "siguiente": "n026"
+        },
+        {
+          "texto": "No, hocico normal",
+          "siguiente": "n027"
+        }
+      ]
+    },
+    {
+      "id": "n026",
+      "pregunta": "¿Los dientes de la sierra son PEQUEÑOS y MUY JUNTOS (23-34 por lado)?",
+      "ayuda": "Pristis pectinata: 23-34 dientes pequeños y cercanos.\nPristis perotteti/zephyreus: 17-22 dientes más grandes y separados. ¡PROTEGIDAS - liberar si captura!",
+      "opciones": [
+        {
+          "texto": "Sí, dientes pequeños y juntos",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "65",
+            "titulo": "Pristis pectinata"
+          }
+        },
+        {
+          "texto": "No, dientes grandes y separados",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "66",
+            "titulo": "Pristis perotteti / Pristis zephyreus"
+          }
+        }
+      ]
+    },
+    {
+      "id": "n027",
+      "pregunta": "¿Es una raya REDONDA y robusta capaz de dar DESCARGAS ELÉCTRICAS (temblor al tocarla)?",
+      "ayuda": "Las rayas eléctricas (Narcinidae, Torpedinidae) tienen disco circular y órganos eléctricos. ¡Cuidado, pueden dar calambres!",
+      "opciones": [
+        {
+          "texto": "Sí, raya eléctrica",
+          "siguiente": "n028"
+        },
+        {
+          "texto": "No, no eléctrica",
+          "siguiente": "n031"
+        }
+      ]
+    },
+    {
+      "id": "n028",
+      "pregunta": "¿Es una raya eléctrica GRANDE (más de 50 cm, disco casi circular y grueso)?",
+      "ayuda": "Torpedinidae (torpedos): grandes, disco grueso circular, hasta 1.8 m. Narcinidae: pequeñas, <77 cm.",
+      "opciones": [
+        {
+          "texto": "Sí, grande y gruesa",
+          "siguiente": "n029"
+        },
+        {
+          "texto": "No, pequeña (<77 cm)",
+          "siguiente": "n030"
+        }
+      ]
+    },
+    {
+      "id": "n029",
+      "pregunta": "¿Qué torpedo (Torpedinidae) es? Compare por región.",
+      "ayuda": "Rayas eléctricas grandes.",
+      "opciones": [
+        {
+          "texto": "Torpedo andersoni",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "74",
+            "titulo": "Torpedo andersoni"
+          }
+        },
+        {
+          "texto": "Torpedo nobiliana",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "75",
+            "titulo": "Torpedo nobiliana"
+          }
+        },
+        {
+          "texto": "Torpedo peruana",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "76",
+            "titulo": "Torpedo peruana"
+          }
+        }
+      ]
+    },
+    {
+      "id": "n030",
+      "pregunta": "¿Qué raya eléctrica pequeña (Narcinidae) es? Compare por talla y patrón.",
+      "ayuda": "Pequeñas rayas eléctricas. Diplobatis <25 cm, Narcine >27 cm.",
+      "opciones": [
+        {
+          "texto": "Diplobatis columbiensis (17.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "67",
+            "titulo": "Diplobatis columbiensis"
+          }
+        },
+        {
+          "texto": "Diplobatis guamachensis (20.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "68",
+            "titulo": "Diplobatis guamachensis"
+          }
+        },
+        {
+          "texto": "Diplobatis ommata (25.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "69",
+            "titulo": "Diplobatis ommata"
+          }
+        },
+        {
+          "texto": "Narcine bancroftii (60.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "70",
+            "titulo": "Narcine bancroftii"
+          }
+        },
+        {
+          "texto": "Narcine entemedor (77.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "71",
+            "titulo": "Narcine entemedor"
+          }
+        },
+        {
+          "texto": "Narcine leoparda (30.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "72",
+            "titulo": "Narcine leoparda"
+          }
+        },
+        {
+          "texto": "Narcine vermiculatus (27.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "73",
+            "titulo": "Narcine vermiculatus"
+          }
+        }
+      ]
+    },
+    {
+      "id": "n031",
+      "pregunta": "¿El cuerpo tiene forma de ALAS puntiagudas tipo águila o manta (disco muy ancho, aletas pectorales como alas)?",
+      "ayuda": "Myliobatidae (águilas marinas, mantas, mobulas): alas puntiagudas. Gymnuridae (mariposa): disco más ancho que largo pero cola cortísima.",
+      "opciones": [
+        {
+          "texto": "Sí, alas tipo águila/manta",
+          "siguiente": "n032"
+        },
+        {
+          "texto": "Disco MUY ancho (mariposa) con cola cortísima",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "116",
+            "titulo": "Gymnura marmorata"
+          }
+        },
+        {
+          "texto": "Disco redondo o romboidal normal",
+          "siguiente": "n034"
+        }
+      ]
+    },
+    {
+      "id": "n032",
+      "pregunta": "¿Es una MANTA GIGANTE (más de 5 m de envergadura)?",
+      "ayuda": "Manta birostris: hasta 7 m, la raya más grande del mundo. Mobula spp: mantas diablo más pequeñas (1-2 m). Aetobatus: chucho pintado con puntos blancos. Rhinoptera: gavilán con hocico hendido.",
+      "opciones": [
+        {
+          "texto": "Sí, manta gigante (>5 m)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "118",
+            "titulo": "Manta birostris"
+          }
+        },
+        {
+          "texto": "Con PUNTOS BLANCOS sobre fondo oscuro",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "117",
+            "titulo": "Aetobatus narinari"
+          }
+        },
+        {
+          "texto": "Manta mediana lisa o gavilán (hocico hendido)",
+          "siguiente": "n033"
+        }
+      ]
+    },
+    {
+      "id": "n033",
+      "pregunta": "¿Cuál de estas rayas (Mobula/Rhinoptera) es? Compare por región y hocico.",
+      "ayuda": "Mobula: mantas diablo. Rhinoptera: gavilanes con hocico cuadrado/hendido. Use la ficha comparativa.",
+      "opciones": [
+        {
+          "texto": "Mobula hypostoma",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "119",
+            "titulo": "Mobula hypostoma"
+          }
+        },
+        {
+          "texto": "Mobula munkiana",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "120",
+            "titulo": "Mobula munkiana"
+          }
+        },
+        {
+          "texto": "Mobula thurstoni",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "121",
+            "titulo": "Mobula thurstoni"
+          }
+        },
+        {
+          "texto": "Rhinoptera bonasus",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "122",
+            "titulo": "Rhinoptera bonasus"
+          }
+        },
+        {
+          "texto": "Rhinoptera brasiliensis",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "123",
+            "titulo": "Rhinoptera brasiliensis"
+          }
+        },
+        {
+          "texto": "Rhinoptera steindachneri",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "124",
+            "titulo": "Rhinoptera steindachneri"
+          }
+        }
+      ]
+    },
+    {
+      "id": "n034",
+      "pregunta": "¿La cola es delgada y LARGA tipo LÁTIGO, SIN aletas dorsales, a menudo con una espina venenosa?",
+      "ayuda": "Rayas látigo (Dasyatidae, Urotrygonidae, Potamotrygonidae): cola látigo con espina. Rajidae: cola delgada CON dos dorsales y SIN espina venenosa.",
+      "opciones": [
+        {
+          "texto": "Sí, cola látigo con espina",
+          "siguiente": "n037"
+        },
+        {
+          "texto": "Cola delgada con dos dorsales y sin espina venenosa",
+          "siguiente": "n035"
+        },
+        {
+          "texto": "Cuerpo de guitarra (hocico largo, cola robusta con dorsales)",
+          "siguiente": "n036"
+        }
+      ]
+    },
+    {
+      "id": "n035",
+      "pregunta": "¿Qué raya (Rajidae) es? Compare por talla y región.",
+      "ayuda": "Rayas de aguas profundas, disco romboidal, cola delgada sin espina venenosa. ¡Ovíparas (ponen huevos)!",
+      "opciones": [
+        {
+          "texto": "Breviraja nigriventralis (52.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "82",
+            "titulo": "Breviraja nigriventralis"
+          }
+        },
+        {
+          "texto": "Dactylobatus clarki (45.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "83",
+            "titulo": "Dactylobatus clarki"
+          }
+        },
+        {
+          "texto": "Dipturus bullisi (60.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "84",
+            "titulo": "Dipturus bullisi"
+          }
+        },
+        {
+          "texto": "Dipturus garricki (80.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "85",
+            "titulo": "Dipturus garricki"
+          }
+        },
+        {
+          "texto": "Dipturus teevani (58.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "86",
+            "titulo": "Dipturus teevani"
+          }
+        },
+        {
+          "texto": "Gurgesiella atlantica (30.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "87",
+            "titulo": "Gurgesiella atlantica"
+          }
+        },
+        {
+          "texto": "Raja cervigoni (55.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "88",
+            "titulo": "Raja cervigoni"
+          }
+        },
+        {
+          "texto": "Raja equatorialis (76.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "89",
+            "titulo": "Raja equatorialis"
+          }
+        },
+        {
+          "texto": "Raja velezi (70.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "90",
+            "titulo": "Raja velezi"
+          }
+        },
+        {
+          "texto": "Rajella purpuriventralis (62.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "91",
+            "titulo": "Rajella purpuriventralis"
+          }
+        },
+        {
+          "texto": "Anacanthobatis americanus (? cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "108",
+            "titulo": "Anacanthobatis americanus"
+          }
+        },
+        {
+          "texto": "Cruriraja rugosa (? cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "109",
+            "titulo": "Cruriraja rugosa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "n036",
+      "pregunta": "¿Qué raya guitarra (Rhinobatidae) es? Compare por región.",
+      "ayuda": "Cuerpo de guitarra: hocico largo, cola robusta con dos dorsales.",
+      "opciones": [
+        {
+          "texto": "Rhinobatos leucorhynchus",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "77",
+            "titulo": "Rhinobatos leucorhynchus"
+          }
+        },
+        {
+          "texto": "Rhinobatos percellens",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "78",
+            "titulo": "Rhinobatos percellens"
+          }
+        },
+        {
+          "texto": "Rhinobatos planiceps",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "79",
+            "titulo": "Rhinobatos planiceps"
+          }
+        },
+        {
+          "texto": "Rhinobatos prahli",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "80",
+            "titulo": "Rhinobatos prahli"
+          }
+        },
+        {
+          "texto": "Zapteryx xyster",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "81",
+            "titulo": "Zapteryx xyster"
+          }
+        }
+      ]
+    },
+    {
+      "id": "n037",
+      "pregunta": "¿La capturó en AGUA DULCE (río, quebrada, estero)?",
+      "ayuda": "Potamotrygonidae: rayas exclusivas de agua dulce (Amazonas, Orinoco, Magdalena). ¡Espina muy venenosa! Las demás son marinas.",
+      "opciones": [
+        {
+          "texto": "Sí, agua dulce",
+          "siguiente": "n038"
+        },
+        {
+          "texto": "No, agua salada (mar)",
+          "siguiente": "n039"
+        }
+      ]
+    },
+    {
+      "id": "n038",
+      "pregunta": "¿Qué raya de agua dulce (Potamotrygonidae) es? Compare por patrón y talla.",
+      "ayuda": "Rayas de río con patrones llamativos (ocelos, rosetas, manchas).",
+      "opciones": [
+        {
+          "texto": "Paratrygon aiereba (100.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "100",
+            "titulo": "Paratrygon aiereba"
+          }
+        },
+        {
+          "texto": "Plesiotrygon iwamae (60.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "101",
+            "titulo": "Plesiotrygon iwamae"
+          }
+        },
+        {
+          "texto": "Potamotrygon constellata (45.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "102",
+            "titulo": "Potamotrygon constellata"
+          }
+        },
+        {
+          "texto": "Potamotrygon magdalenae (50.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "103",
+            "titulo": "Potamotrygon magdalenae"
+          }
+        },
+        {
+          "texto": "Potamotrygon motoro (50.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "104",
+            "titulo": "Potamotrygon motoro"
+          }
+        },
+        {
+          "texto": "Potamotrygon orbignyi (35.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "105",
+            "titulo": "Potamotrygon orbignyi"
+          }
+        },
+        {
+          "texto": "Potamotrygon schroederi (60.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "106",
+            "titulo": "Potamotrygon schroederi"
+          }
+        },
+        {
+          "texto": "Potamotrygon yepezi (40.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "107",
+            "titulo": "Potamotrygon yepezi"
+          }
+        }
+      ]
+    },
+    {
+      "id": "n039",
+      "pregunta": "¿Es una raya PEQUEÑA (menos de 50 cm de ancho) con disco casi circular?",
+      "ayuda": "Urotrygonidae: pequeñas (<76 cm), disco redondo, Pacífico principalmente. Dasyatidae: más grandes, disco romboidal.",
+      "opciones": [
+        {
+          "texto": "Sí, pequeña y circular",
+          "siguiente": "n040"
+        },
+        {
+          "texto": "No, más grande y romboidal",
+          "siguiente": "n041"
+        }
+      ]
+    },
+    {
+      "id": "n040",
+      "pregunta": "¿Qué raya redonda (Urotrygonidae) es? Compare por región y talla.",
+      "ayuda": "Rayas látigo pequeñas del Pacífico/Caribe.",
+      "opciones": [
+        {
+          "texto": "Urobatis halleri (58.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "92",
+            "titulo": "Urobatis halleri"
+          }
+        },
+        {
+          "texto": "Urobatis jamaicensis (76.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "93",
+            "titulo": "Urobatis jamaicensis"
+          }
+        },
+        {
+          "texto": "Urobatis tumbesensis (30.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "94",
+            "titulo": "Urobatis tumbesensis"
+          }
+        },
+        {
+          "texto": "Urotrygon aspidura (40.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "95",
+            "titulo": "Urotrygon aspidura"
+          }
+        },
+        {
+          "texto": "Urotrygon chilensis (45.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "96",
+            "titulo": "Urotrygon chilensis"
+          }
+        },
+        {
+          "texto": "Urotrygon munda (30.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "97",
+            "titulo": "Urotrygon munda"
+          }
+        },
+        {
+          "texto": "Urotrygon rogersi (35.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "98",
+            "titulo": "Urotrygon rogersi"
+          }
+        },
+        {
+          "texto": "Urotrygon venezuelae (30.0 cm)",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "99",
+            "titulo": "Urotrygon venezuelae"
+          }
+        }
+      ]
+    },
+    {
+      "id": "n041",
+      "pregunta": "¿Qué raya látigo (Dasyatidae) es? Compare por región.",
+      "ayuda": "Rayas látigo marinas, cola muy larga con espina venenosa.",
+      "opciones": [
+        {
+          "texto": "Dasyatis americana",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "110",
+            "titulo": "Dasyatis americana"
+          }
+        },
+        {
+          "texto": "Dasyatis dipterura",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "111",
+            "titulo": "Dasyatis dipterura"
+          }
+        },
+        {
+          "texto": "Dasyatis guttata",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "112",
+            "titulo": "Dasyatis guttata"
+          }
+        },
+        {
+          "texto": "Dasyatis longa",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "113",
+            "titulo": "Dasyatis longa"
+          }
+        },
+        {
+          "texto": "Himantura pacifica",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "114",
+            "titulo": "Himantura pacifica"
+          }
+        },
+        {
+          "texto": "Himantura schmardae",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "115",
+            "titulo": "Himantura schmardae"
+          }
+        }
+      ]
+    },
+    {
+      "id": "n042",
+      "pregunta": "¿El hocico es LARGO y puntiagudo, proyectado hacia adelante como una aguja fina?",
+      "ayuda": "Las quimeras tienen opérculo cubriendo las branquias y una espina venenosa en la primera aleta dorsal.",
+      "opciones": [
+        {
+          "texto": "Sí, hocico largo y fino",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "125",
+            "titulo": "Neoharriotta carri"
+          }
+        },
+        {
+          "texto": "No, hocico corto y redondeado",
+          "siguiente": "n043"
+        }
+      ]
+    },
+    {
+      "id": "n043",
+      "pregunta": "¿El animal es grande (hasta 1 m) y proviene de aguas MUY profundas (más de 900 m)?",
+      "ayuda": "Chimaera cubana: hasta 80 cm, 180-900 m de profundidad.\nHydrolagus alberti: hasta 1 m, 348-1470 m (la más profunda).",
+      "opciones": [
+        {
+          "texto": "Sí, grande y muy profundo",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "127",
+            "titulo": "Hydrolagus alberti"
+          }
+        },
+        {
+          "texto": "No, menor y menos profundo",
+          "siguiente": {
+            "tipo": "especie",
+            "especie_id": "126",
+            "titulo": "Chimaera cubana"
+          }
+        }
+      ]
+    },
+    {
+      "id": "n044",
+      "pregunta": "¿Qué tipo de animal es?",
+      "ayuda": "Observe la forma general del cuerpo.",
+      "opciones": [
+        {
+          "texto": "TIBURÓN: cuerpo alargado con aletas pectorales separadas de la cabeza",
+          "siguiente": "n001"
+        },
+        {
+          "texto": "RAYA: cuerpo aplanado en disco, aletas pectorales unidas a la cabeza",
+          "siguiente": "n025"
+        },
+        {
+          "texto": "QUIMERA: cabeza grande, ojos grandes, opérculo cubriendo las branquias",
+          "siguiente": "n042"
+        }
+      ]
+    }
+  ]
+}
